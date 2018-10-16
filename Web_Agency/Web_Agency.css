@@ -83,6 +83,21 @@ a
   transition: color 0.3s ease;
 }
 
+div.point{
+	border: 6px solid #5cadd3 ;
+	border-radius: 12px 12px 12px 12px;		
+}
+
+.barre{
+	border: 1px solid #ebebeb;
+	flex-basis: 50px;
+	margin: 5px;
+	border-bottom: none;
+	border-right: none;
+	border-left: none;
+}
+
+
 /*---------------------------- slider ----------------------------------*/
 
 .slider .text{
@@ -216,21 +231,6 @@ div.decor{
 	justify-content: center;	
 }
 
-.barre{
-	border: 1px solid #ebebeb;
-	flex-basis: 50px;
-	margin: 5px;
-	border-bottom: none;
-	border-right: none;
-	border-left: none;
-}
-
-}
-
-div.point{
-	border: 6px solid #5cadd3 ;
-	border-radius: 12px 12px 12px 12px;		
-}
 
 div.cercle div{
 	border: 6px solid;
