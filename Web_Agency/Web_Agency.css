@@ -216,8 +216,7 @@ div.decor{
 	justify-content: center;	
 }
 
-
-div.cotÃ©Droit{
+.barre{
 	border: 1px solid #ebebeb;
 	flex-basis: 50px;
 	margin: 5px;
@@ -226,13 +225,6 @@ div.cotÃ©Droit{
 	border-left: none;
 }
 
-div.cotÃ©Gauche{
-	border: 1px solid #ebebeb;
-	flex-basis: 50px;
-	margin: 5px;
-	border-bottom: none;
-	border-right: none;
-	border-left: none;
 }
 
 div.point{
