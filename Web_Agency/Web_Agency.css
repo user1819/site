@@ -105,7 +105,7 @@ a
 
 .fa-angle-left{
 	position: absolute;
-	top: 49.5%;
+	top: 30%;
 	margin-left: 0.30em;
 	color: #fff;
 }
@@ -113,7 +113,7 @@ a
 .fa-angle-right{
 	position: absolute;
 	right: 0;
-	top: 49.5%;
+	top: 30%;
 	margin-right: .3em;
 	color: #fff;
 }
@@ -125,9 +125,11 @@ div.CercleGauche {
 	top: 45%;
 	width: 2.5vw;
 	height: 5vw;
-	background: #000;
-	opacity: 0.33;
+	background-color: rgba(0,0,0,0.5);
 	border-radius: 0vw 5vw 5vw 0vw;
+	flex-direction:column;
+	display:flex;
+	
 }
 
 div.CercleDroit{
@@ -136,8 +138,7 @@ div.CercleDroit{
 	top: 45%;
 	width: 2.5vw;
 	height: 5vw;
-	background: #000;
-	opacity: 0.33;
+	background-color: rgba(0,0,0,0.5);
 	border-radius: 5vw 0vw 0vw 5vw;
 }
 
@@ -216,7 +217,7 @@ div.decor{
 }
 
 
-div.cotéDroit{
+div.cotÃ©Droit{
 	border: 1px solid #ebebeb;
 	flex-basis: 50px;
 	margin: 5px;
@@ -225,7 +226,7 @@ div.cotéDroit{
 	border-left: none;
 }
 
-div.cotéGauche{
+div.cotÃ©Gauche{
 	border: 1px solid #ebebeb;
 	flex-basis: 50px;
 	margin: 5px;
@@ -400,6 +401,7 @@ div.cercle div{
 
 input,textarea{
 	padding:10px 10px;
+	width:300px;
 }
 
 iframe{
