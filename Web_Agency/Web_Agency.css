@@ -18,40 +18,10 @@ body{
 	padding: 0;
 }
 
-@media screen and (max-width: 975px){
-	.header{
-		flex-direction: column;
-	}
-	ul{
-		margin-left:10em ;
-		justify-content: center;
-	}	
-	
-	.logo{
-		margin-right: 8em;
-		text-align: center;
-	}
-}
-
 a{
 	text-decoration: none;
 	color: #716f6f;
 }
-
-div.point{
-	border: 6px solid #5cadd3 ;
-	border-radius: 12px 12px 12px 12px;		
-}
-
-.barre{
-	border: 1px solid #ebebeb;
-	flex-basis: 50px;
-	margin: 5px;
-	border-bottom: none;
-	border-right: none;
-	border-left: none;
-}
-
 
 /*---------------------------- header----------------------------------*/
 div.logo{
@@ -97,8 +67,6 @@ a
   color: #232323;
   transition: color 0.3s ease;
 }
-
-
 
 /*---------------------------- slider ----------------------------------*/
 
@@ -234,6 +202,21 @@ div.decor{
 }
 
 
+.barre{
+	border: 1px solid #ebebeb;
+	flex-basis: 50px;
+	margin: 5px;
+	border-bottom: none;
+	border-right: none;
+	border-left: none;
+}
+
+
+div.point{
+	border: 6px solid #5cadd3 ;
+	border-radius: 12px 12px 12px 12px;		
+}
+
 div.cercle div{
 	border: 6px solid;
 	border-radius: 12px 12px 12px 12px;
@@ -252,6 +235,8 @@ div.cercle div{
 .Nos_Services .text {
 	margin-top: 8em;
 }
+
+/*--------------------------- Nos-projets---------------------------------*/
 
 .Main_Feature img{
 	margin-top: 3em;
@@ -380,7 +365,15 @@ div.cercle div{
 
 #FormilaireDeContact{
 	position: relative;
+}
+
+.fond{
 	background-color: #2174ab;
+	width: 100%;
+	height: 600px;
+	position: absolute;
+	top: 0;
+	z-index: -1;
 }
 
 .Formulaire{
@@ -410,4 +403,32 @@ iframe{
 	border-radius: 2px;
 	height: 30px;
 	white-space: nowrap;
+}
+
+/*--------------------------- media-queries---------------------------------*/
+
+
+ @media screen and (max-width: 1024px){
+	.Formulaire {
+		background-color: rgba(33,116,171,.7);
+		position:   inherit;
+		width: 320px;
+		margin: auto;		
+		
+	}	
+}
+
+@media screen and (max-width: 975px){
+	.header{
+		flex-direction: column;
+	}
+	ul{
+		margin-left:10em ;
+		justify-content: center;
+	}	
+	
+	.logo{
+		margin-right: 8em;
+		text-align: center;
+	}
 }
