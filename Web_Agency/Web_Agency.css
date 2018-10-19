@@ -140,6 +140,9 @@ div.CercleDroit{
 	border-bottom: .2vw solid #4494bb;
 }
 
+.slider img{
+	width: 100%;
+}
 
 
 /*---------------------------- Nos Services ----------------------------------*/
