@@ -1,10 +1,3 @@
-img{
-	width:320px;
-}
-
-body{
-	margin:0;
-}
 
 /*/*sommaire*/
 
@@ -28,7 +21,8 @@ body{
 
 a{
 	text-decoration: none;
-	color: #716f6f;
+	color: #232323;
+  	transition: color 0.3s ease;
 }
 
 /*---------------------------- header----------------------------------*/
@@ -41,12 +35,11 @@ div.logo img{
 	justify-content: space-around;
 	flex-wrap: wrap;
 	
-}
-nav{
-
+	
 }
 
-ul {
+
+header ul {
 	display: flex;
 	list-style-type: none;
 	font-size:20px;
@@ -59,21 +52,24 @@ ul a{
 	padding:0px 10px 0px 10px;
 }
 
-ul a:hover{
+header ul a:hover{
 	border-top: 3px solid #5cadd3;
 	color: #000;
 }
 
-ul a:focus{
+header ul a:focus{
 	border-top: 3px solid #5cadd3;
 	color: #000;
 }
 
-a
+header li a.active{
+	border-top: 3px solid #5cadd3;
+}
+
+
+header a
 {
-  text-decoration: none;
-  color: #232323;
-  transition: color 0.3s ease;
+  padding-top: 1.576em
 }
 
 .slider img{
@@ -158,30 +154,36 @@ div.CercleDroit{
 
 .header2{
 	text-align: center;
+	position:relative;
+	padding-top:10px;
 }
 
-div.services{
+.services{
 	display: flex;
-	
-}
-
-div.Nos_Services .text{
-	flex-grow: 1;
 }
 
 div.Main_Feature{
-	flex-grow: 1;
+	flex-grow: 5;
 	text-align:center;
 }
 
 div.Main_Feature img{
-	width:300px
+	width:450px;
 }
 
 
+.text h4 ,p{
+	margin:0;
+	line-height:20px
+}
 
-div.text div{
+.text article{
+	margin: 10px 0px 10px 0px 
+}
+
+.text div{
 	display: flex;
+
 	
 }
 
@@ -199,22 +201,24 @@ div.cercle{
 	border: 1px solid #c8c8c8;
 	border-radius: 40px 40px 40px 40px;
 	border-right: none;
-	width:65px;
+	min-width:66px;
 	justify-content: center;
 	flex-direction: column;
 	align-items: center;
 	margin-top:25px;
+	
 		
 }
 
-div.text section {
+.text article {
 	padding-left: 20px;
 }
 
 
 div.decor{
 	display: flex;
-	justify-content: center;	
+	justify-content: center;
+	
 }
 
 
@@ -243,13 +247,14 @@ div.cercle div{
 	margin-right: -8px
 }
 
-.UX{
-	/* flex-wrap: wrap; */
-	line-height: 1.5em;
+.UX_design {
+	margin:auto;
 }
 
+
 .Nos_Services .text {
-	margin-top: 8em;
+	margin: 5em 0em 1em 0em;
+	flex-grow:2;
 }
 
 /*--------------------------- Nos-projets---------------------------------*/
@@ -258,27 +263,33 @@ div.cercle div{
 	display: flex;
 	flex-wrap: wrap;
 	max-width: 1600px;
-	margin:auto;
+	margin:auto; 
 	justify-content: center;
 }
 
 
 .portfolio img{
 	height: 250px;
-	width: 320px;
+	width: 300px;
 	margin:10px 30px 10px 0px;
 
+}
+
+
+.portfolio figure{
+	margin:0;
+	padding:0;
 }
 
 .legendeportfolio{
 	
 	background-color: rgba(0,0,0,0.5);
-	width: 320px;
+	width: 300px;
 	height: 75px;
 	
 	visibility:hidden;
 	position: absolute;
-	bottom: 24px;
+	bottom: 14px;
 	right: 30px;
 	color: #fff;		 
 }
@@ -293,19 +304,6 @@ div.cercle div{
 
 }
 
-.conteneur1 div{
-	display: flex;
-	justify-content: center;
-	height: 46px;
-	
-}
-
-.conteneur1{
-	display: flex;
-	align-items: center;
-	flex-direction: column;
-	margin: 50px 0px 50px 0px;	 
-}
 
 
 .circle{
@@ -332,39 +330,10 @@ div.cercle div{
 	justify-content: center;
 }
 
-#Nos_Projets{
+.Nos_Projets{
 	background-color: #f5f5f5;
 }
 
-.conteneur1 section{
-	background-color: #e5e5e5;
-	border-bottom: 4px solid #e5e5e5;
-	position: relative;
-	padding: 13px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-.All_Work{
-	border-radius: 5px 0px 0px 5px;
-}
-
-.Port{
-	border-radius: 0px 5px 5px 0px;
-}
-
-
-.conteneur1 section:hover .triangle{
-	 width: 0px;
-   height: 0px;
-  background-color: #468cad;
-	position: absolute;
-	bottom: -12px;
-	border-left: 8px solid #f5f5f5;
-	border-right: 8px solid #f5f5f5;
-	border-top: 8px solid #468cad;
-}
 
 #FormilaireDeContact{
 	position: relative;
@@ -400,6 +369,12 @@ iframe{
 	height:600px;
 	margin:0;
 	padding:0;
+	height: 600px;
+	border: 0;
+}
+
+iframe style{
+	border: 0;
 }
 
 .bouttonForm{
@@ -412,7 +387,70 @@ iframe{
 	white-space: nowrap;
 }
 
+.menu2{
+	margin:0px 0px 15px 0px;
+}
 
+
+.menu2 a {
+	display:flex;
+ 	flex-direction:column;
+ 	align-items:center;
+}
+
+
+
+
+.menu2 ul{
+	display:flex;
+	list-style-type:none;
+	justify-content:center;
+	position: relative;
+	margin:20px 0px 20px 0px;
+	padding:0;
+	
+}
+
+.menu2 li{
+ padding:15px;
+ background-color:#e5e5e5;
+}
+
+
+
+
+.menu2 li:first-child{
+	background-color:#5cadd3;
+	border-bottom:5px solid #468cad;
+	border-radius:10px 0px 0px 10px;
+}
+
+.menu2 li:last-child{
+	border-radius:0px 10px 10px 0px;
+}
+
+ .menu2 li:first-child .triangle{
+	background-color: #468cad;
+	border-left: 8px solid #f5f5f5;
+	border-right: 8px solid #f5f5f5;
+	border-top: 8px solid #468cad;
+	position:absolute;
+	bottom:-8px;	
+}
+
+	li:hover .triangle{
+	background-color: #468cad;
+	border-left: 8px solid #f5f5f5;
+	border-right: 8px solid #f5f5f5;
+	border-top: 8px solid #468cad;
+	position:absolute;
+	bottom:-8px;		
+}
+
+.menu2 li:hover{
+	background-color:#5cadd3;
+	border-bottom: 5px solid #468cad;
+}
 
 /*--------------------------- media-queries---------------------------------*/
 
@@ -425,7 +463,11 @@ iframe{
 
 	.legendeportfolio{
 	right:auto;
-	bottom:14px;
+	bottom:4.5px;
+	}
+
+	div.Main_Feature img{
+		width:300px;
 	}
 
  }
@@ -442,7 +484,7 @@ iframe{
 	}
 
 	
-	ul {
+	header ul {
 		flex-direction:column;
 		font-size:19px;
 		background-color:#333;
@@ -452,7 +494,10 @@ iframe{
 		position:relative;
 		margin:auto;
 	}
-
+	
+	header ul a.active{
+		border:inherit;
+	}
 	li{
 		padding: 10px 0px 10px 0px;
 	}
@@ -461,23 +506,31 @@ iframe{
 		color:#fff;
 	}
 
-	ul a:hover , ul a:focus{
-		border: none;
+	header ul a:hover , header ul a:focus{
+		border: inherit;
 		color: #5cadd3;
 	}
 
 	
 
-	.conteneur1 div{
+	.menu2 ul{
 		flex-direction: column;
 		height:auto;
 		width: 100%;
 	}
 
-	.conteneur1 section{
-		margin:auto;
+	.menu2 a:first-child, .menu2 a:last-child{
 		border-radius:inherit;
 	}
+	
+	.triangle{
+		display:none;
+	}
+
+	li a.active{
+		color:#5cadd3;
+	}
+
 	
 
 }
@@ -488,19 +541,25 @@ iframe{
 		flex-direction:column;
 	}
 
-	div.services{
-		flex-wrap:wrap;
+	.UX_design article{
+		padding:inherit;
 	}
 
-	div.services .text{
+
+	.services{
+		flex-wrap:wrap;
+		
+	}
+
+	.services .text{
 		margin:auto;
 	}
 
 	.cercle{
 		margin:auto;
 	}
-
-
+	
+	
 	.Formulaire{
 		position:relative;
 		right:auto;
